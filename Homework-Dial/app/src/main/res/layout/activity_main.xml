@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/phoneNumberText"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.07999998" />
+
+    <ImageView
+        android:id="@+id/phoneNumberDeleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/dial_delete_button"
+        android:tint="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/phoneNumberText"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.07999998"
+        app:srcCompat="@android:drawable/ic_input_delete" />
+
+    <View
+        android:id="@+id/dialDivider"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:background="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phoneNumberText"
+        app:layout_constraintVertical_bias="0.050000012" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialDivider">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="257dp"
+            style="?android:buttonBarStyle">
+
+            <Button
+                android:id="@+id/dial1"
+                style="?android:buttonBarButtonStyle"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/dial_button"
+                android:text="@string/_1"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/dial2"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/dial_button"
+                style="?android:buttonBarButtonStyle"
+                android:text="@string/_2"
+                android:textSize="30sp"/>
+
+            <Button
+                android:id="@+id/dial3"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/dial_button"
+                style="?android:buttonBarButtonStyle"
+                android:text="@string/_3"
+                android:textSize="30sp"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="?android:buttonBarStyle">
+
+            <Button
+                android:id="@+id/dial4"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/dial_button"
+                style="?android:buttonBarButtonStyle"
+                android:text="@string/_4"
+                android:textSize="30sp"/>
+
+            <Button
+                android:id="@+id/dial5"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/dial_button"
+                style="?android:buttonBarButtonStyle"
+                android:text="@string/_5"
+                android:textSize="30sp"/>
+
+            <Button
+                android:id="@+id/dial6"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/dial_button"
+                style="?android:buttonBarButtonStyle"
+                android:text="@string/_6"
+                android:textSize="30sp"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="?android:buttonBarStyle">
+
+            <Button
+                android:id="@+id/dial7"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/dial_button"
+                style="?android:buttonBarButtonStyle"
+                android:text="@string/_7"
+                android:textSize="30sp"/>
+
+            <Button
+                android:id="@+id/dial8"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/dial_button"
+                style="?android:buttonBarButtonStyle"
+                android:text="@string/_8"
+                android:textSize="30sp"/>
+
+            <Button
+                android:id="@+id/dial9"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/dial_button"
+                style="?android:buttonBarButtonStyle"
+                android:text="@string/_9"
+                android:textSize="30sp"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="?android:buttonBarStyle">
+
+            <Button
+                android:id="@+id/dialAsterisk"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/dial_button"
+                style="?android:buttonBarButtonStyle"
+                android:text="@string/_asterisk"
+                android:textSize="30sp"/>
+
+            <Button
+                android:id="@+id/dial0"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/dial_button"
+                style="?android:buttonBarButtonStyle"
+                android:text="@string/_0"
+                android:textSize="30sp"/>
+
+            <Button
+                android:id="@+id/dialCardinal"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/dial_button"
+                style="?android:buttonBarButtonStyle"
+                android:text="@string/_cardinal"
+                android:textSize="30sp"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="?android:buttonBarStyle">
+
+            <Button
+                android:id="@+id/callCenter"
+                android:visibility="invisible"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/dial_button"
+                style="?android:buttonBarButtonStyle"
+                android:text="" />
+
+            <Button
+                android:id="@+id/callButton"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/call_button"
+                style="?android:buttonBarButtonStyle" />
+        </TableRow>
+    </TableLayout>
+
+</android.support.constraint.ConstraintLayout>
