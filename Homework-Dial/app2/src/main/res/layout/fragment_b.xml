@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable name="cityName" type="String" />
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".FragmentB">
+
+        <TextView
+            android:id="@+id/city_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{cityName}"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:gravity="center"
+            android:textSize="40sp"
+            android:textColor="@color/design_default_color_primary"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+</layout>

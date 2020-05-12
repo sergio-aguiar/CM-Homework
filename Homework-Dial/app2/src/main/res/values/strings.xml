@@ -1,0 +1,15 @@
+<resources>
+
+    <string name="app_name">Homework2</string>
+    <string name="fragment_a_label">First Fragment</string>
+    <string name="fragment_b_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string-array name="array_list">
+        <item>Aveiro</item>
+        <item>Lisboa</item>
+        <item>Porto</item>
+    </string-array>
+
+</resources>
